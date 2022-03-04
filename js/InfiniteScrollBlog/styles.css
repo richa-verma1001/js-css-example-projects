@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  outline: 0px solid black;
+  box-sizing: border-box;
+}
+
+:root {
+--dark: #296CA8;
+--light: #4992D3;
+--shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
+}
+
+html {
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+h1 {
+  font-size: 2rem;
+}
+.container {
+  width: 70vw;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+.searchBox {
+  margin: 2rem 0rem;
+}
+.searchBox input {
+  min-width: 100%;
+  padding: 1rem;
+}
+
+.post {
+  background: var(--light);
+  color: white;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.post.hide{
+  display: none;
+}
+
+.index {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  border: 1px solid var(--dark);
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.scroll.active {
+  visibility: visible;
+}
+
+.scroll div {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: 3px;
+  border: 1px solid white;
+  animation-name: bouncing; 
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.scroll div:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.scroll div:nth-child(3){
+  animation-delay: 0.2s;
+}
+
+@keyframes bouncing {
+  0%, 100% {
+    transform: translateY(0);  
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

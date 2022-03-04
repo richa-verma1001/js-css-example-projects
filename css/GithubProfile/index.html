@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Github Profile Card</title>
+</head>
+<body>
+  <div class="container">
+    <section class="top">
+      <form id="userForm" class="userForm">
+        <input id="userId" type="text" value="Search a Github user"></input>
+      </form>      
+    </section
+    >
+    <section class="card">
+      <div class="avatar">
+        <img src="" alt="" id="avatar"/>
+      </div>
+      <div class="profile">
+        <h3 id="userName">Lorem, ipsum.</h3>
+        <p id="userAbout">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, voluptas.</p>
+        <ul class="socialMetrics">
+          <li>
+            <span id="followers">1213</span>
+            <span><strong>Followers</strong></span>
+          </li>
+          <li>
+            <span id="following">6</span>
+            <span><strong>Following</strong></span>
+          </li>
+          <li>
+            <span id="repos">100</span>
+            <span><strong>Repos</strong></span>
+          </li>
+        </ul>
+        <ul id="top5Repos" class="repoList"></ul>
+
+      </div>
+    </section>
+    
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

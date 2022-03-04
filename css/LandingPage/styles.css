@@ -1,0 +1,114 @@
+:root {
+  --primary: #eob7a1;
+  --light: #fff;
+  --dark: #333;
+  --shadow: 1px 2px 10px rgba(104, 104, 104, 0.8);
+}
+* {
+  outline: 0px solid red;
+}
+
+body {
+  background: url(img/camping2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: black;
+  margin: 0px;
+
+}
+.wrapper {
+  min-height: calc(100vh - 108px);
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  background: var(--dark);
+  color: var(--light);
+  max-width: 100px;
+  box-shadow: var(--shadow);
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--light);
+  text-align: center;
+  padding: 10px;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+.selected {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .logo {
+  display: flex;
+}
+
+.logo > i {
+  margin-top: 10px;
+}
+
+nav h3 {
+  margin-left: 20px;
+  font-size: 2.0rem;
+  margin-top: 20px;
+}
+
+.navLinks ul {
+  display: flex;
+  list-style: none;
+}
+
+.navLinks li {
+  text-align: center;
+  margin-left: 40px;
+}
+
+main {
+  width: 1000px;
+  /* min-height: 500px; */
+  margin: auto;
+}
+.pageContent {
+  margin: 100px 200px;
+}
+
+.pageContent h1 {
+  font-size: 3rem;
+  color: var(--light);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  align-self: baseline;
+  /* grid-gap: 200px; */
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  padding: 10px;
+}
+
+footer strong {
+  color: #F5A780;
+}

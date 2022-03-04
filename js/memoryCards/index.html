@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Memory Cards</title>
+</head>
+<body>
+  <div class="container">
+
+    <div id="listCards" class="listCards active">
+      <div class="header">
+        <h1>Memory Cards</h1>
+        <button id="addCardDetail" class="addCardDetail"><i class="fas fa-plus"></i>Add New Card</button>
+      </div>
+      <div id="cardContainer" class="cardContainer">
+        <div class="showDetails">
+          <!-- <button id="flip" class="flip"><i class="fas fa-repeat"></i></button> -->
+          <h4 id="front"></h4>
+          <button id="showAnswer" class="showAnswer">Answer</button>
+          <h4 id="back"></h4>
+        </div>     
+      </div>
+      <div class="footer">
+        <button id="prev" class="prev"><i class="fas fa-arrow-left"></i></button>
+        <span id="paging"></span>
+        <button id="next" class="next"><i class="fas fa-arrow-right"></i></button>
+      </div>
+
+    </div> 
+
+    <div id="newCard" class="newCard">
+      <div class="header">
+        <h1>Add New Card</h1>
+        <button id="closeCard"><i class="fas fa-close"></i></button>
+      </div>
+      <div class="cardContainer">
+        <div class="enterDetails active">
+          <div class="section">
+            <label for="question">Question</label>
+            <textarea type="text" id="question" placeholder="Enter your question ..."></textarea>
+          </div>
+          <div class="section">
+            <label for="Answer">Answer</label>
+            <textarea type="text" id="answer" placeholder="Enter your answer..."></textarea>
+          </div>       
+        </div>
+      </div>
+      <div class="footer">
+        <button id="submitCard"><i class="fas fa-plus"></i>Add Card</button>
+      </div>
+    </div>  
+  </div>
+  <button id="clearData" class="clearData">
+    <i class="fas fa-trash"></i>Clear Data
+  </button>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
