@@ -9,6 +9,7 @@
   --colorLight: #cde;
   --colorDark: #cdf;
 }
+
 body {
   background-color: #cde;
 }
@@ -20,8 +21,9 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
+  /* grid-column-gap: 1em; */
+  /* grid-row-gap: 1em; */
+  grid-gap: 1em;
 }
 .wrapper > div:nth-child(odd) {
   background: #ddd;
@@ -41,7 +43,7 @@ body {
 }
 .box2 {
   display: grid;
-  grid-auto-rows: 500px;
+  /* grid-auto-rows: minmax(300px, auto); */
 }
 .box2 > ul {
   list-style: none;
@@ -54,8 +56,8 @@ body {
   padding: 10px 10px;
   margin: 10px 10px;
   text-align: center;
-  /* box-shadow: 5px 5px 0px 0px var(--colorLight);
-  border-radius: 10%; */
+  /* box-shadow: 5px 5px 0px 0px var(--colorLight); */
+  /* border-radius: 40%; */
 }
 
 .box2 > ul > li:hover {
@@ -68,13 +70,14 @@ body {
   padding: 10px;
 }
 .box4 {
-  display: grid;
+  /* display: grid; */
   grid-column: 1/3;
-  grid-auto-rows: 50px;
+  /* grid-auto-rows: 50px; */
 }
 .section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  min-height: 50px;
   margin: 0px;
 }
 

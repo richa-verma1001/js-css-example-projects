@@ -65,8 +65,8 @@ header h6 {
   letter-spacing: 1px;
 }
 
-.btn:active {
-  transform: scale(1.02);
+.btn:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 480px) {
