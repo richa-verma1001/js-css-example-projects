@@ -7,7 +7,7 @@ const resetBtn = document.getElementById('reset');
 const mainNode = document.querySelector('.main>ul');
 const RANDOM_USER = 'https://randomuser.me/api';
 let users = [];
-console.log(mainNode);
+// console.log(mainNode);
 
 
 
