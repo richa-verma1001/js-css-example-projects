@@ -69,8 +69,16 @@ header h6 {
   transform: scale(1.05);
 }
 
+/* @media (max-width: 768px) {
+  .container {
+    width: 60vw;
+    height: 70vh;
+  }
+} */
+
 @media (max-width: 480px) {
   .container {
+    width: 90vw;
     height: 70vh;
   }
 }
